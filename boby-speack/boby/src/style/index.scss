@@ -1,0 +1,220 @@
+div,p,ul,ol,li,dl,dt,dd,form,table,h1,h2,h3,h4,h5,h6,input,select,textarea,span,strong,em,b,i,u,a,img,*{padding:0;margin:0;box-sizing: border-box}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+body { font-family: "宋体"; font-size: 12px;  color: #000; background-color: #fff; }
+ul,ol,li { list-style: none; }
+h1,h2,h3,h4,h5,h6{ font-size: 14px;}
+img{ border: none;}
+table{border-collapse:collapse;}
+img,input,textarea,select,output{ vertical-align: middle;}
+a { background: transparent; text-decoration: none; color: #333; }
+a:hover{  color: #006699;}
+.clear{ clear:both; height: 0; width: 0; overflow: hidden;}
+body,html{ height:100%;width:100%;}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .list{
+    flex: 1;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+
+  }
+.head{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.foot{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    li{
+      height: 50px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      span{
+        display: block;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &.router-link-exact-active {
+        color: red;
+      }
+    }
+}
+
+
+.listen1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column
+}
+.listenhead{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border:1px solid red;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    a{
+        flex: 1;
+        color: red;
+        &.router-link-exact-active {
+            color: #fff;
+            background: red;
+          }
+
+    }
+}
+.listenlist{
+  flex: 1;
+  overflow: auto
+}
+.minehead{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+
+.listnav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  .imgs{
+    width: 32%;
+    height: 60px; 
+    img{
+      width: 90%;
+      height: 90%;
+      margin: auto;
+      border-radius: 10px;
+    }
+  }
+  .titleRight{
+    width: 68%;
+    height: 80px;
+    position: relative;
+    .icon{
+      position: absolute;
+      right:30px;
+      color: #42b983;
+    }
+  }
+}
+.animatelist{
+  width: 50%;
+  height: 150px;
+  display: inline-block;
+  margin-top:10px;
+  // background: darkcyan;
+  .imgs{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    .nice{
+      position: absolute;
+      right:10px;
+      bottom: 15px;
+      display: inline-block;
+      width: 24px;
+      line-height: 12px;
+      font-size: 9px;
+      height: 12px;
+      color:red;
+      border-radius: 4px;
+      background: #fff;
+    }
+    img{
+    border-radius: 5px;
+      width: 90%;
+      height: 90%;
+      margin-left: 10px;
+    }
+  }
+}
+.songlist{
+  width: 100%;
+  height: 70px;
+  padding-left: 10px;
+  position: relative;
+  .iconsong{
+    right:25px;
+    font-size: 14px;
+    position: absolute;
+  }
+}
+.auto{
+  text-align: center;
+}
+.miuc{
+  margin-top: 40px;
+  width:100%;
+  height: 300px;
+  overflow: auto;
+  p{
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.on{
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+.minelist{
+  
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+background: #eee;
+  line-height: 50px;
+  .iconmine{
+    position: absolute;
+    right:20px;
+    bottom: 2px;
+  }
+}
+.back{
+  display: inline-block;
+  background: red;
+  color: #fff;
+  width: 290px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-top: 50px;
+
+  border:none;
+}
+.ting{
+  color: red;
+}
+.video{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  background: rgba(0, 0, 0,.5)
+}

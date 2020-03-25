@@ -1,0 +1,63 @@
+<template>
+   <div class="alertbox" v-if="open">
+       <div>
+           {{tip}}
+       </div>
+
+   </div>
+</template>
+<script>
+export default {
+   name: 'message',
+   props:{
+       tip:{
+           type:String,
+           defalut:"弹框信息"
+       },
+       time:{
+           type:Number,
+           defalut:3
+       }
+   },
+
+   data() {
+       return {
+           timer:null,
+           open:true
+
+       }
+   },
+  created: {},
+  methods: {},
+  mounted() {
+      this.timer=setTimeout(() => {
+          this.open=false
+          
+      },this.time*1000);
+  },
+  beforeDestroy() {
+      clearTimeout(this.timer)  
+  },
+}
+</script>
+<style style='scss' scoped>
+.alertbox{
+    position: fixed;
+    z-index: 999;
+    background: transparent;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.alertbox>div{
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+</style>
